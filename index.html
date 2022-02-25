@@ -7,7 +7,7 @@
     content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/common_style.css">
     <link rel="stylesheet" href="style.css">  
-    <title> BMI calculator</title>
+    <title> BMI calculator </title>
 </head>
 <body>
 
@@ -27,22 +27,26 @@
             <nav class="responsive">
 
                 <!--<button class="menu" id="mobButton">Menu</button>-->
-
                 
                 <ul>
                     <li><a href="https://victor-python.github.io/Portfolio_web_page/">Home</a></li>
-                    <li><a href="#starter">BMI</a></li>
-                    <li><a href="https://victor-python.github.io/color_gradients/">Next</a></li>
+                    <li><a href="https://victor-python.github.io/Portfolio_web_page/"> 《 </a></li>
+                    <li><a href="#starter">Project</a></li>
+                    <li><a href="https://victor-python.github.io/color_gradients/"> 》</a></li>
                     <li><a href="https://www.bc.fi/?sgclid=CjwKCAiAgbiQBhAHEiwAuQ6Bkr5THOt4DfqX4mz_e1O6WBURiBQcHFbgeelyfIXyITuybfpFCgFI6RoCjrEQAvD_BwE" target="blank">HBC</a></li>
                     <li><a href="#conctactSection">Conctact</a></li>
                 </ul>
             </nav>
         </section>
         <section id="heroBanner">
-            
-            <div id="welcome">
-                <h4>School Project 01:</h4>
-                <h1>Body Mass Calculator</h1>
+  
+            <div id="intro">
+                <h4> School Project 01: </h4>
+            </div>
+
+            <div id="welcome" class="invisible pageTitle">
+                
+                <h1> "Body Mass Calculator" </h1>
             </div>
         </section>
         
@@ -54,11 +58,11 @@
             <img src="/common_img/topHexes.jpg" alt="pic" class="pic" class="sectionPic">
         </div>
         
-        <section>
+        <section id="content">
             
             <article id="bmi">
 
-                <h1>BMI</h1>
+                <h1>"BMI"</h1>
                 <p>Make a program that calculates body mass index. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres. Based on result display correct range:
                         BMI Status
                         18.5    or less     Underweight
@@ -78,9 +82,9 @@
                     
                     <button id="calculate" onclick="calculate();" > calculate</button>
                                        
-                    <p id="solution"></p>
+                    <h3><p id="solution"></p></h3>
 
-            </article>  
+            </article>
 
         </section>
 
@@ -154,7 +158,8 @@
 
         </footer>
     
-    <script src="main.js"></script>
     <script src="common_main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
+
