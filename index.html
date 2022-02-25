@@ -3,29 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <title>Document</title>
-</head>
-<body>
-
-
-    <script src="main.js"></script>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/style.css">
-    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="/common_style.css">
+    <link rel="stylesheet" href="style.css">  
+    <title> BMI calculator</title>
 </head>
 <body>
 
@@ -48,24 +30,19 @@
 
                 
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="https://victor-python.github.io/Portfolio_web_page/">Home</a></li>
                     <li><a href="#starter">BMI</a></li>
-                    <li><a href="/schoolProjects/02backgroundGradients/index.html">Next</a></li>
+                    <li><a href="https://victor-python.github.io/color_gradients/">Next</a></li>
                     <li><a href="https://www.bc.fi/?sgclid=CjwKCAiAgbiQBhAHEiwAuQ6Bkr5THOt4DfqX4mz_e1O6WBURiBQcHFbgeelyfIXyITuybfpFCgFI6RoCjrEQAvD_BwE" target="blank">HBC</a></li>
                     <li><a href="#conctactSection">Conctact</a></li>
                 </ul>
             </nav>
         </section>
         <section id="heroBanner">
-            <div id="intro">
-                <h4>Hi, I'm</h3>
-                <h2>Victor Griñán,</h2>
-                <h4>a developer.</h3>
-            </div>
             
-            <div id="welcome" class="invisible">
-                <h4>Welcome to </h4>
-                <h1>My first Project Ever!</h1>
+            <div id="welcome">
+                <h4>School Project 01:</h4>
+                <h1>Body Mass Calculator</h1>
             </div>
         </section>
         
@@ -74,7 +51,7 @@
 
     <main>
         <div class="imgBox" id="starter">
-            <img src="/images/topHexes.jpg" alt="pic" class="pic" class="sectionPic">
+            <img src="/common_img/" alt="pic" class="pic" class="sectionPic">
         </div>
         
         <section>
@@ -91,12 +68,12 @@
 
                     <div>
                         <label for="weight"> weight (kg)</label>
-                        <input type="number" id="weight" placeholder="weight in kg (65.3)">
+                        <input type="number" id="weight" placeholder="weight in kg (65.3)" min="0">
                     </div>   
                     
                     <div>
                         <label for="height"> heigth (cm)</label>
-                        <input type="number" id="height" placeholder="height in meters (1.6)">
+                        <input type="number" id="height" placeholder="height in meters (1.6)" min="0">
                     </div>
                     
                     <button id="calculate" onclick="calculate();" > calculate</button>
