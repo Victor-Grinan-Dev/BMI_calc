@@ -1,17 +1,20 @@
 const calculate = () => {
     let weight = Number(document.querySelector("#weight").value);
     let height = Number(document.querySelector("#height").value) / 100;
-
-    let BMI = (weight / (height * height)).toFixed(1);
-    let solution = document.querySelector("#solution");
-    let color;
-    let result;
-    let quote = "Your BMI is: "
     
     solution.setAttribute("class", "");
-    if (isNaN(weight) || isNaN(height)){
+    if (weight == 0 || height == 0){
         solution.textContent = "no data";
+        return -1;
     }else{
+
+        let BMI = (weight / (height * height)).toFixed(1);
+        let solution = document.querySelector("#solution");
+        let color;
+        let result;
+        let quote = "Your BMI is: "
+
+
         if (BMI < 18.5) {
             result = `${quote} ${BMI} = "Underweight"`;  
             color = "warning";    
@@ -30,5 +33,4 @@ const calculate = () => {
         document.querySelector("#weight").value = 0;
         document.querySelector("#height").value = 0;
     }
-    
 }
